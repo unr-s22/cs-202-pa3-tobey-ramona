@@ -10,3 +10,7 @@
 
 //need to incorporate balance bool operator<(const Money& rhs) {
 //return ______ < rhs._____;
+int main(){
+
+  return 0;
+}
