@@ -14,3 +14,5 @@ public:
 };
 
 #endif
+//Money& operator+=(const Money& rhs) { dollars += dollar.rhs;
+//cents += rhs.cent;}
