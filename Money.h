@@ -13,9 +13,11 @@ public:
     dollars = dollars;
     cents = cents;
   }
-  bool
-  //Money& operator+=(const Money& rhs) { dollars += dollars.rhs;
-    //cents += rhs.cents;}
+  bool Money::operator+ (const Money& account){
+    return dollars + account.dollars;
+    return cents + account.cents;
+  }
+
   friend ostream &operator<<(ostream &os, const Money &money)
   {
       os << money.dollars << money.cents;

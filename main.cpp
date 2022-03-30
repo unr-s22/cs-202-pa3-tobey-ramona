@@ -11,13 +11,16 @@ using namespace std;
 //need to incorporate balance bool operator<(const Money& rhs) {
 //return ______ < rhs._____;
 int main(){
-  Money account1(300, 23);
-  cout << account1 <<endl;
-  Account account(account1);
-  Money.deposit account2(200, 00);
-  Money.deposit account3(300, 24);
-  Money.deposit account4(501, 22);
-
+  Money account(300, 23);
+  cout << account <<endl;
+  Account account(account);
+  Money.deposit account(200, 00);
+  Money.deposit account(300, 24);
+  Money.deposit account(501, 22);
+  cout << account <<endl;
+  Money.withdrawl account(300, 10);
+  Money.withdrawl account(201, 34);
+  cout << account <<endl;
   return 0;
 }
 //Money m1(10), m2(5); cout<<m1 >=m2; // true
