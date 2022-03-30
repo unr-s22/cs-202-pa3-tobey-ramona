@@ -10,9 +10,8 @@ class Money{
 public:
   Money();
   Money(int dollars, int cents):dollars(dollars), cents(cents){}
-
+  Money& operator+=(const Money& rhs) { dollars += dollars.rhs;
+    cents += rhs.cents;}
 };
 
 #endif
-//Money& operator+=(const Money& rhs) { dollars += dollar.rhs;
-//cents += rhs.cent;}
