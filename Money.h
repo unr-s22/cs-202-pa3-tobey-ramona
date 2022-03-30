@@ -9,9 +9,19 @@ class Money{
 
 public:
   Money();
-  Money(int dollars, int cents):dollars(dollars), cents(cents){}
-  Money& operator+=(const Money& rhs) { dollars += dollars.rhs;
-    cents += rhs.cents;}
+  Money(int dollars, int cents){
+    dollars = dollars;
+    cents = cents;
+  }
+  bool
+  //Money& operator+=(const Money& rhs) { dollars += dollars.rhs;
+    //cents += rhs.cents;}
+  friend ostream &operator<<(ostream &os, const Money &money)
+  {
+      os << money.dollars << money.cents;
+      return os;
+  }
+
 };
 
 #endif
